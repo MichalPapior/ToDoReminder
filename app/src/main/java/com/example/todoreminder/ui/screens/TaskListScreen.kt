@@ -14,6 +14,7 @@ import com.example.todoreminder.vm.TaskViewModel
 import java.text.SimpleDateFormat
 import java.util.*
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TaskListScreen(vm: TaskViewModel, onAdd: () -> Unit, onEdit: (Long) -> Unit, onSettings: () -> Unit) {
     val tasks = vm.tasks.value
